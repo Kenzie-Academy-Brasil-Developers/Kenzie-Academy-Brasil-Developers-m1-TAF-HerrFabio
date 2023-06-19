@@ -23,69 +23,47 @@ let passed = false;
 */
 // **sua lógica a partir daqui**
 
+
+//aqui chama a variavel e compara se genero é igual a male
 if (gener === 'male') {
-    console.log("Candidato do genero masculino.");
-} else {
-    console.log("Candidato do sexo feminino");
+    
+    //aqui chama a variavel e compara se valor é maior ou igual a 1,70 e concatena com a string
+} else if (height >= 1,70 + (" metros")) {
+
+    //aqui chama a variavel e compara se valor é maior ou igual a 6 ou se a segunda variável é maior ou igual a 15 e concatena com a string
+} else if (barReps >= 6 || barSeconds >= 15 + "segundos") {
+
+    // aqui chama a variavel e compara se valor é maior ou igual a 41
+} else if (abs >= 41){
+
+    //aqui compara uma igualdade entre as duas variáveis concatenando as strings e usa a condicional or para uma segunda alternativa de comparação de igualdade para ver se ambas as variáaveis cumprem o valor mínimo e concatena as strings
+} else if (runDistance >= 3 +('km') && runTime <= 12 +(' minutos') || runDistance >= 5 +("km") && runTime <= 20 +('minutos')){
+
+    //aqui compara uma igualdade entre as duas variáveis concatenando as strings e usa a condicional or para uma segunda alternativa para ver se a variável não ultrapassa o valor máximo e concatena a string
+} else if (swimDistance >= 100 +("metros") && swimTime <= 60 ("segundos") || diveTime <= 30 ("segundos") ){ 
+
 }
 
-if (gener === 'male' && height >= 1, 60 + " altura") {
-    console.log("Candidato apto pra realizar o TAF.");
+//aqui chama a variavel e compara se genero é igual a female
+if (gener === 'female') {
+    
+    //aqui chama a variavel e compara se valor é maior ou igual a 1,60 e concatena com a string
+} else if (height >= 1,60 + (" metros")) {
 
-} else {
-    console.log("Candidato inapto para realizar o TAF.");
+    //aqui chama a variavel e compara se valor é maior ou igual a 5 ou se a segunda variável é maior ou igual a 12 e concatena com a string
+} else if (barReps >= 5 || barSeconds >= 12 + "segundos") {
+
+// aqui chama a variavel e compara se valor é maior ou igual a 41
+} else if (abs >= 41){
+
+    //aqui compara uma igualdade entre as duas variáveis concatenando as strings e usa a condicional or para uma segunda alternativa de comparação de igualdade para ver se ambas as variáveis cumprem suas condições e concatena as strings
+} else if (runDistance >= 4 +('km') && runTime <= 12 +(' minutos') || runDistance >= 6 +("km") && runTime <= 22 +('minutos')){
+
+    //aqui compara uma igualdade entre as duas variáveis concatenando as strings e usa a condicional or para uma segunda alternativa para ver se a variável não ultrapassa o valor máximo e concatena a string
+} else if (swimDistance >= 100 +("metros") && swimTime <= 60 ("segundos") || diveTime <= 30 ("segundos") ){ 
+
 }
 
-if (gener === 'male' && barReps == 12) {
-    barReps = 10
-    console.log("Candidato fez 10 pontos");
-} else if (gener === 'male' && barReps == 11) {
-    barReps = 9
-    console.log("Candidato fez 9 pontos");
-
-}else if (gener === 'male' && barReps == 10){
-    barReps = 8
-    console.log("Candidato fez 8 pontos");
-
-}else if (gener === 'male' && barReps == 9){
-    barReps = 7
-    console.log("Candidato fez 7 pontos");
-
-}else if (gener === 'male' && barReps == 8){
-    barReps = 6
-    console.log("Candidato fez 6 pontos");
-
-}else if (gener === 'male' && barReps == 7){
-    barReps = 5
-    console.log("Candidato fez 5 pontos");
-
-}else if (gener === 'male' && barReps == 6){
-    barReps = 4
-    console.log("Candidato fez 4 pontos");
-
-}else if (gener === 'male' && barReps == 5){
-    barReps = 3
-    console.log("Candidato fez 3 pontos");
-
-}else if (gener === 'male' && barReps == 4){
-    barReps = 2
-    console.log("Candidato fez 2 pontos");
-
-}else if (gener === 'male' && barReps == 3){
-    barReps = 1
-    console.log("Candidato fez 1 pontos");
-
-}else if (gener === 'male' && barReps == 2){
-    barReps = 0
-    console.log("Candidato fez 0 pontos");
-
-}else if (gener === 'male' && barReps == 1){
-    barReps = 0
-    console.log("Candidato fez 0 pontos");
-
-}else{
-    console.log ("Candidato não fez barra.");
-}
 
 /*
     Seu código deve conter apenas UM console.log, e ele deve ser o abaixo.
