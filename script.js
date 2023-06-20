@@ -10,7 +10,7 @@ const swimDistance = process.argv[9]; // Distância da natação
 const swimTime = process.argv[10]; // Tempo da natação
 const diveTime = process.argv[11]; // Tempo de mergulho
 
-let passed = true;
+let passed = false;
 
 /*
     Importante:
@@ -25,58 +25,61 @@ let passed = true;
 
 
 //aqui chama a variavel e compara se genero é igual a male
-if (gener === 'male') {
+if (gender == 'male') {
+
 
     //aqui chama a variavel e compara se valor é maior ou igual a 1,70 
     if (height >= 1.70) {
 
         //aqui chama a variavel e compara se valor é maior ou igual a 6 ou se a segunda variável é maior ou igual a 15 
-    } else if (barReps >= 6 || barSeconds >= 15) {
+        if (barReps >= 6 || barSeconds >= 15) {
+            // aqui chama a variavel e compara se valor é maior ou igual a 41
+            if (abs >= 41) {
+                //aqui compara uma igualdade entre as duas variáveis  e usa a condicional or para uma segunda alternativa de comparação de igualdade para ver se ambas as variáaveis cumprem o valor mínimo 
+                if (runDistance >= 3000 && runTime <= 720 || runDistance >= 5000 && runTime <= 1200) {
+                    //aqui compara uma igualdade entre as duas variáveis e usa a condicional or para uma segunda alternativa para ver se a variável não ultrapassa o valor máximo 
+                    if (swimDistance >= 100 && swimTime <= 60 || diveTime <= 30){
 
-        // aqui chama a variavel e compara se valor é maior ou igual a 41
-    } else if (abs >= 41) {
-
-        //aqui compara uma igualdade entre as duas variáveis  e usa a condicional or para uma segunda alternativa de comparação de igualdade para ver se ambas as variáaveis cumprem o valor mínimo 
-    } else if (runDistance >= 3 && runTime <= 12  || runDistance >= 5  && runTime <= 20 ) {
-
-        //aqui compara uma igualdade entre as duas variáveis e usa a condicional or para uma segunda alternativa para ver se a variável não ultrapassa o valor máximo 
-    } else if (swimDistance >= 100  && swimTime <= 1 || diveTime <= 0.3) {
-
-
+                        passed = true;
+                    }
+                }
+            }
+        }
     }
-    passed = true
-} else {
-    passed = false
-}
 
+}
 
 //aqui chama a variavel e compara se genero é igual a female
-if (gener === 'female') {
+if (gender == 'female') {
 
-    //aqui chama a variavel e compara se valor é maior ou igual a 1,60 
-     if (height >= 1.60 ) {
+    //     //aqui chama a variavel e compara se valor é maior ou igual a 1,60 
+    if (height >= 1.60){
 
-    //aqui chama a variavel e compara se valor é maior ou igual a 5 ou se a segunda variável é maior ou igual a 12 
-} else if (barReps >= 5 || barSeconds >= 12 ) {
+        //         //aqui chama a variavel e compara se valor é maior ou igual a 5 ou se a segunda variável é maior ou igual a 12 
+        if (barReps >= 5 || barSeconds >= 12){
+            
+            //         // aqui chama a variavel e compara se valor é maior ou igual a 41
+            if (abs >= 41){
+                
+                //         //aqui compara uma igualdade entre as duas variáveis e usa a condicional or para uma segunda alternativa de comparação de igualdade para ver se ambas as variáveis cumprem suas condições 
+                if (runDistance >= 4000 && runTime <= 900 || runDistance >= 6000 && runTime <= 1320){
+                    
+                    //         //aqui compara uma igualdade entre as duas variáveis e usa a condicional or para uma segunda alternativa para ver se a variável não ultrapassa o valor máximo 
+                    if (swimDistance >= 100 && swimTime <= 1 || diveTime <= 30){
 
-    // aqui chama a variavel e compara se valor é maior ou igual a 41
-} else if (abs >= 41) {
-
-    //aqui compara uma igualdade entre as duas variáveis e usa a condicional or para uma segunda alternativa de comparação de igualdade para ver se ambas as variáveis cumprem suas condições 
-} else if (runDistance >= 4  && runTime <= 12  || runDistance >= 6  && runTime <= 22 ) {
-
-    //aqui compara uma igualdade entre as duas variáveis e usa a condicional or para uma segunda alternativa para ver se a variável não ultrapassa o valor máximo 
-} else if (swimDistance >= 100  && swimTime <= 1 || diveTime <= 0.3) {
-
+                        passed = true
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+    
 }
-    passed = true
-}else{
-    passed = false
-}
-
-
-/*
-    Seu código deve conter apenas UM console.log, e ele deve ser o abaixo.
-    Não altere nada pra baixo dessa linha, senão os testes não irão funcionar.
-*/
 console.log(passed);
+    
+    /*
+        Seu código deve conter apenas UM console.log, e ele deve ser o abaixo.
+        Não altere nada pra baixo dessa linha, senão os testes não irão funcionar.
+    */    
